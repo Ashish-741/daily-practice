@@ -1,0 +1,107 @@
+Speech-to-Text Note Maker using Machine Learning and Web Technologies
+Problem Statement
+In today’s fast-paced academic and professional environments, note-taking is a critical skill, but manual transcription is often time-consuming and inefficient. 
+Students, researchers, and professionals struggle to keep up with lectures, meetings, or discussions while ensuring accuracy and completeness in their notes. 
+Moreover, searching through lengthy notes without summaries, keywords, or categorized topics further reduces productivity.
+
+Objective and Scope
+
+Objectives:
+
+Convert audio into accurate text using an ASR (Automatic Speech Recognition) model.
+
+Summarize long transcripts into concise, easy-to-read bullet points.
+
+Automatically extract key terms and important keywords.
+
+Classify notes into predefined categories like Education, Technology, Health, etc.
+
+Provide a user-friendly interface where transcripts, summaries, keywords, and topics can be viewed, saved, or downloaded.
+
+Scope:
+
+Applicable for students (lecture transcription), researchers, journalists, and corporate employees (meeting notes).
+
+Scalable to cloud-based systems with user accounts for personalized note storage.
+
+Enhancements like multilingual support, search functionality, and real-time summarization can be integrated in the future.
+
+
+Methodology
+
+Speech-to-Text Conversion
+
+Use pre-trained ML models like Whisper/Vosk for accurate transcription of lectures/meetings.
+
+Text Processing (ML Models):
+
+Keyword Extraction: Train a lightweight ML model to identify important terms.
+
+Topic Classification: Train a supervised model (SVM/Naive Bayes) to categorize notes into topics.
+
+Summarization: Use pre-trained NLP models (e.g., HuggingFace Transformers) for concise summaries.
+
+Bullet Points Generator: Convert extracted key sentences into easy-to-read bullet points.
+
+Web Application Development
+
+Frontend: React/HTML/CSS/JS for user interaction.
+
+Backend: Flask/Django (Python) or Node.js with REST APIs.
+
+Database: PostgreSQL or MongoDB for storing transcripts, notes, and metadata.
+
+Hardware & Software Requirements
+
+Hardware:
+
+Processor: Intel i5 or higher.
+
+RAM: 8GB minimum.
+
+Storage: 500GB HDD / 256GB SSD.
+
+Software:
+
+Programming Languages: Python, JavaScript.
+
+Frameworks: Flask/FastAPI (Backend), React.js (Frontend).
+
+NLP/ML Libraries: Hugging Face Transformers, spaCy, NLTK, scikit-learn.
+
+Database: MySQL / MongoDB.
+
+Tools: GitHub, VS Code, PyCharm.
+
+Future Work
+
+Real-time live transcription.
+
+Cloud storage & user accounts.
+
+Multilingual support.
+
+Integration with productivity tools like Google Docs or MS OneNote.
+
+Enhanced accuracy with fine-tuned models for specific domains (e.g., medical, legal).
+
+
+Limitations of the Proposed System
+
+Dependency on Model Accuracy: Speech-to-text and summarization quality depend heavily on the chosen models and datasets. Accents, background noise, and poor audio quality may reduce accuracy.
+
+Resource Intensive: Running advanced NLP models (e.g., BERT, Pegasus) may require GPU support for faster inference, making it less efficient on low-end hardware.
+
+Scalability Challenges: While the system can work locally, scaling it for multiple concurrent users may require cloud infrastructure and optimization.
+
+Language Limitations: Initial version may primarily support English; extending to multilingual support requires additional datasets and fine-tuning.
+
+Storage & Privacy Concerns: Storing transcripts and audio data in a database or cloud may raise privacy/security concerns for sensitive information.
+
+Internet Dependence (for APIs): If third-party APIs like Google Speech-to-Text are used, the system cannot function offline and will incur usage costs.
+
+Conclusion
+
+Lexora aims to provide a smart, AI-powered note-taking assistant that makes lectures, meetings, and research discussions more efficient. 
+By combining speech-to-text, summarization, keyword extraction, and topic classification in a single system, it helps users save time, stay organized, and focus on understanding rather than just writing. 
+The project stands out by integrating multiple NLP techniques into a single user-friendly web application.
