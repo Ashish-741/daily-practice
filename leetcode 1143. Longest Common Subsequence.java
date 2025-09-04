@@ -9,6 +9,7 @@ class Solution {
         //return LCS(text1, text2, 0, 0, dp);
         return BU(text1, text2);
     }
+    //bottom up apporach
     public static int BU(String s1, String s2)
     {
         int[][] dp=new int[s1.length()+1][s2.length()+1];// blank striung ke liye +1
@@ -32,6 +33,8 @@ class Solution {
         }
         return dp[dp.length-1][dp[0].length-1];
     }
+
+    //top down apporach
     public static int TD(String s1, String s2, int i, int j, int[][] dp)
     {
         if(i==s1.length() || j==s2.length())
